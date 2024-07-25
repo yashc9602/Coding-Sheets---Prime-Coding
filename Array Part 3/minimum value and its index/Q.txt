@@ -1,0 +1,1 @@
+Given an integer array, find the minimum value and its index in the array.

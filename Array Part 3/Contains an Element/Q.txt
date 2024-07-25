@@ -1,0 +1,1 @@
+Given an integer array and an integer element, check if the array contains the element.

@@ -1,0 +1,18 @@
+Given an array of integers, find the maximum subarray sum. A subarray is a contiguous subsequence of the array.
+
+To find the maximum sum of a contiguous subarray within a given array of integers, you can use a well-known algorithm called Kadane's Algorithm. This algorithm efficiently finds the maximum subarray sum in O(n) time, where n is the length of the array.
+
+Kadane's Algorithm Overview
+The idea behind Kadane's Algorithm is to iterate through the array while keeping track of the maximum subarray sum found so far (max_so_far) and the maximum sum of the subarray that ends at the current position (max_ending_here).
+
+Initialize max_so_far and max_ending_here with the first element of the array.
+Iterate through the array starting from the second element:
+Update max_ending_here to be the maximum of the current element alone or the current element plus max_ending_here.
+Update max_so_far to be the maximum of max_so_far and max_ending_here.
+Return max_so_far as the maximum subarray sum.
+
+
+Explanation
+max_ending_here: This variable keeps track of the maximum sum of the subarray ending at the current index. It is calculated by considering whether to start a new subarray at the current index or to extend the previous subarray to include the current element.
+max_so_far: This variable tracks the maximum sum encountered so far during the iteration.
+The algorithm updates max_so_far whenever a new maximum is found, ensuring that the result is the maximum sum of any subarray in the input array.

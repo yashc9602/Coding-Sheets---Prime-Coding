@@ -1,0 +1,8 @@
+Given an integer array and an integer element, count the number of occurrences of the element in the array.
+
+Explanation
+Initialization: A counter is initialized to zero.
+Iteration: The function iterates through the array.
+Comparison: For each element, it checks if the element is equal to the target element.
+Increment: If a match is found, the counter is incremented.
+Return: The function returns the counter value, which represents the number of times the target element appears in the array.
