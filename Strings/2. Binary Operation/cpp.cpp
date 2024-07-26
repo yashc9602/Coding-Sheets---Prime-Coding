@@ -37,7 +37,6 @@ string binaryXor(string s1, string s2) {
     }
     return result;
 }
-
 // Sample Test
 int main() {
     string s1 = "1101";
@@ -47,3 +46,4 @@ int main() {
     cout << binaryXor(s1, s2) << endl;  // Output: "0110"
     return 0;
 }
+
