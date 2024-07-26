@@ -1,13 +1,13 @@
 def replace_character(str, ch1, ch2):
-    result = []
+    result = ""
     for char in str:
         if char == ch1:
-            result.append(ch2)
+            result += ch2
         elif char == ch2:
-            result.append(ch1)
+            result += ch1
         else:
-            result.append(char)
-    return ''.join(result)
+            result += char
+    return result
 
 # Sample Test
 str = "apples"

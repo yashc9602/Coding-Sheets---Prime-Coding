@@ -26,8 +26,12 @@ def binary_xor(s1, s2):
     return result
 
 # Sample Test
-s1 = "1101"
-s2 = "1011"
-print(binary_and(s1, s2))  # Output: "1001"
-print(binary_or(s1, s2))   # Output: "1111"
-print(binary_xor(s1, s2))  # Output: "0110"
+s1 = input()
+s2 = input()
+operator = input()
+if operator == "AND":
+    print(binary_and(s1, s2))  # Output: "1001"
+elif operator == "OR":
+    print(binary_or(s1, s2))   # Output: "1111"
+else:
+    print(binary_xor(s1, s2))  # Output: "0110"
