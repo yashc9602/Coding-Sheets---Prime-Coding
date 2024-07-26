@@ -1,0 +1,7 @@
+Explanation
+Iterate through each character: Traverse each character of the string str.
+Replace characters: For each character:
+If it matches ch1, append ch2 to the result string.
+If it matches ch2, append ch1 to the result string.
+If it doesn't match either, append the character itself to the result string.
+Build the result string: Collect all the characters into a new string that reflects the replacements.

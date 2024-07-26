@@ -1,0 +1,4 @@
+Explanation
+Length Check: First, we check if the lengths of the two strings are equal. If not, they can't be anagrams.
+Sorting: We sort both strings. Sorting reorders the characters in the strings in alphabetical order.
+Comparison: We compare the sorted versions of the strings. If they are identical, then the original strings are anagrams; otherwise, they are not.

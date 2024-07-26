@@ -1,0 +1,5 @@
+Explanation
+Initialize Pointers: Two pointers are used: left starts at the beginning of the string and right starts at the end.
+Compare Characters: The characters at the left and right positions are compared. If they are not equal, the function returns False.
+Move Pointers: If the characters are equal, the left pointer is moved one step to the right and the right pointer is moved one step to the left.
+Check Completion: The process continues until the pointers cross each other. If no mismatch is found, the function returns True.

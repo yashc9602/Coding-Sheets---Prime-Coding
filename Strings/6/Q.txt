@@ -1,0 +1,1 @@
+The function accepts a string ‘str’ as its argument. The function needs to return the transformed string by replacing all occurrences of the character ‘a’ with the character ‘b’ and vice versa.

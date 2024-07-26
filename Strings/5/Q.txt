@@ -1,0 +1,20 @@
+Perform a function to reverse a string word-wise. The input here will be the string. In the output, the last word mentioned should come as the first word and vice versa.
+Example
+Input:
+Welcome to code
+Output:
+code to Welcome
+
+Explanation
+The Reversed string word wise function is applied.
+Example
+Input:
+Code to Crack Puzzle
+Output:
+Puzzle Crack to Code
+
+
+Explanation
+Split the string into words: Iterate through each character of the input string. Whenever a space character is encountered, store the current word and reset the word accumulator. Continue until the end of the string.
+Reverse the order of words: Traverse the list of words from the end to the beginning and construct the reversed sentence.
+Handle spaces properly: Ensure that spaces are added between words appropriately while constructing the reversed sentence.

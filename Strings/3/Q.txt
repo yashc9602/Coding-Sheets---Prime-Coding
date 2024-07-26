@@ -1,0 +1,26 @@
+The given function has a string (str) and two characters, ch1 and ch2. Execute the function in such a way that str returns to its original string, and all the events in ch1 are replaced by ch2, and vice versa.
+Replacecharacter(Char str1, Char ch1, Int 1, Char ch2)
+
+Assumption
+
+This string has only alphabets that are in lower case.
+
+Example
+
+Input:
+str: apples
+ch1: a
+ch2: p
+
+Output:
+paales
+
+Explanation
+All the ‘a’ in the string is replaced with ‘p’. And all the ‘p’s are replaced with ‘a’.
+
+Explanation
+Initialization: We initialize an empty list (or an array) to store the modified characters.
+Iteration: We iterate through each character in the string.
+Condition Check: For each character, we check if it matches ch1 or ch2 and replace it with the respective other character.
+Construction: We construct the result string from the modified list (or array).
+Output: The final string with the characters swapped is returned.
