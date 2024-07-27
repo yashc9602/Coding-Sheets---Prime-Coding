@@ -1,0 +1,21 @@
+Clone a Linked List with Random Pointers: Write a function that creates a deep copy of a linked list where each node also has a random pointer to another node in the list.
+
+Steps to Clone a Linked List with Random Pointers
+Copy Nodes and Insert Next to Original Nodes:
+Traverse the original list.
+Create new nodes and insert them right after each original node.
+Copy Random Pointers:
+Traverse the list again.
+Use the random pointers of the original nodes to assign the random pointers for the new nodes.
+Separate the Copied List from the Original List:
+Traverse the list a final time.
+Separate the new nodes from the original nodes to form the copied list.
+
+Explanation
+Copy Nodes and Insert Next to Original Nodes:
+We traverse the list and create new nodes. Each new node is inserted right after its corresponding original node. This allows us to easily set up the random pointers later.
+Copy Random Pointers:
+By iterating through the modified list (which now has interleaved original and copied nodes), we set the random pointer of each new node to the copied node that the original node's random pointer points to.
+Separate the Copied List from the Original List:
+Finally, we restore the original list to its initial state and extract the copied list by updating the next pointers appropriately.
+By following these steps, we ensure that the copied list is a deep copy of the original list with correctly assigned next and random pointers.
