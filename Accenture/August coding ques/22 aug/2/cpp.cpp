@@ -1,26 +1,31 @@
 #include <iostream>
-#include <cmath>
+using namespace std;
 
 bool checkPrime(int n) {
-    if (n <= 1) return false;
-    for (int i = 2; i <= std::sqrt(n); i++) {
-        if (n % i == 0) return false;
+    if (n <= 1) {
+        return false;
+    }
+    for (int i = 2; i <= n * 0.5; i++) {
+        if (n % i == 0) {
+            return false;
+        }
     }
     return true;
 }
 
-bool checkGoogly(int num) {
+int main() {
+    int num;
+    cin >> num;
     int s = 0;
+    
     while (num > 0) {
         int digit = num % 10;
         s += digit;
         num /= 10;
     }
-    return checkPrime(s);
-}
-
-int main() {
-    int num = 22;
-    std::cout << std::boolalpha << checkGoogly(num) << std::endl;
+    
+    bool ans = checkPrime(s);
+    cout << (ans ? "True" : "False") << endl;
+    
     return 0;
 }
